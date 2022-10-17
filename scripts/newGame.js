@@ -506,7 +506,12 @@ const newGame = () => {
     const position = whichOne(randomPosition())
     const textarea = document.getElementById(position)
     clearAllTextarea()
-    textarea.value = dane[randomTile()].name
+    if(ZeroOrOne() <= 1) {
+        textarea.value = dane[randomTile()].symbol
+    } else {
+        textarea.value = dane[randomTile()].name
+    }
+
     // var tile = dane[randomTile()]
     // console.log(JSON.stringify(tile))
 }
@@ -524,6 +529,10 @@ const randomTile = () => {
 
 const randomPosition = () => {
     return getRandomInt(9)+1
+}
+
+const ZeroOrOne = () => {
+    return getRandomInt(4)
 }
 const whichOne = (position) => {
     switch (position) {
