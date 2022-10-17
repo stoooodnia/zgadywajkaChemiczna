@@ -505,7 +505,8 @@ const dane = [
 const newGame = () => {
     const position = whichOne(randomPosition())
     const textarea = document.getElementById(position)
-    textarea.value += dane[randomTile()].name
+    clearAllTextarea()
+    textarea.value = dane[randomTile()].name
     // var tile = dane[randomTile()]
     // console.log(JSON.stringify(tile))
 }
@@ -536,4 +537,15 @@ const whichOne = (position) => {
         case 8 : return "middlebottom"
         case 9 : return "rightbottom"
     } 
+}
+const clearAllTextarea = () => {
+    document.getElementById("lefttop").value = ""
+    document.getElementById("middletop").value = ""
+    document.getElementById("righttop").value = ""
+    document.getElementById("leftmid").value = ""
+    document.getElementById("middlemid").value = ""
+    document.getElementById("rightmid").value = ""
+    document.getElementById("leftbottom").value = ""
+    document.getElementById("middlebottom").value = ""
+    document.getElementById("rightbottom").value = ""
 }
