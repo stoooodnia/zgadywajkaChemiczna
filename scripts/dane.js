@@ -1,4 +1,4 @@
-export const tablicaPierwiastkow = [
+const tablicaPierwiastkow = [
     {
         c: 1,
         r: 1,
@@ -498,33 +498,6 @@ export const tablicaPierwiastkow = [
         r: 7,
         name:"oganeson",
         symbol:"Og"
-    },
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    }
 ]
+export default tablicaPierwiastkow

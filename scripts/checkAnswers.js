@@ -14,3 +14,4 @@ const rightbottom = document.getElementById("rightbottom").value
 const checker = () => {
     console.log("sprawdzilem")
 }
+
