@@ -503,7 +503,9 @@ const dane = [
 // odświeżanie strony
 
 const newGame = () => {
-    console.log(randomPosition())
+    const position = whichOne(randomPosition())
+    const textarea = document.getElementById(position)
+    textarea.value += dane[randomTile()].name
     // var tile = dane[randomTile()]
     // console.log(JSON.stringify(tile))
 }
@@ -521,4 +523,17 @@ const randomTile = () => {
 
 const randomPosition = () => {
     return getRandomInt(9)+1
+}
+const whichOne = (position) => {
+    switch (position) {
+        case 1 : return "lefttop"
+        case 2 : return "middletop"
+        case 3 : return "righttop"
+        case 4 : return "leftmid"
+        case 5 : return "middlemid"
+        case 6 : return "rightmid"
+        case 7 : return "leftbottom"
+        case 8 : return "middlebottom"
+        case 9 : return "rightbottom"
+    } 
 }
