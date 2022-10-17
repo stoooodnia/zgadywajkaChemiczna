@@ -8,21 +8,35 @@
   </head>
   <body>
     <h1>Zgadywajka chemiczna</h1>
+
     <table>
       <tr>
-        <td><input type="text" /></td>
-        <td></td>
-        <td></td>
+        <td>
+          <input type="text" id="lefttop" name="lefttop" />
+        </td>
+        <td><input type="text" id="middletop" name="middletop" /></td>
+        <td><input type="text" id="righttop" name="righttop" /></td>
+      </tr>
+      <tr>
+        <td><input type="text" id="leftmid" name="leftmid" /></td>
+        <td><input type="text" id="middlemid" name="middlemid" /></td>
+        <td><input type="text" id="rightmid" name="rightmid" /></td>
+      </tr>
+      <tr>
+        <td><input type="text" id="leftbottom" name="leftbottom" /></td>
+        <td><input type="text" id="middlebottom" name="middlebottom" /></td>
+        <td><input type="text" id="rightbottom" name="rightbottom" /></td>
       </tr>
       <tr>
         <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td>
+          <button onclick="checker()">zatwierdź</button>
+          <script src="../scripts/checkAnswers.js"></script>
+        </td>
+        <td>
+          <button onclick="newGame()">nowa gra</button>
+          <script src="../scripts/newGame.js"></script>
+        </td>
       </tr>
     </table>
   </body>
