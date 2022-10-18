@@ -1,4 +1,4 @@
-const tablicaPierwiastkow = [
+const dane = [
     {
         c: 1,
         r: 1,
@@ -500,4 +500,3 @@ const tablicaPierwiastkow = [
         symbol:"Og"
     }
 ]
-export default tablicaPierwiastkow

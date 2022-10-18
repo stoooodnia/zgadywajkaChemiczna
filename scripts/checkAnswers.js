@@ -11,7 +11,25 @@ const leftbottom = document.getElementById("leftbottom").value
 const middlebottom = document.getElementById("middlebottom").value
 const rightbottom = document.getElementById("rightbottom").value
 
-const checker = () => {
+const correctCoords = (playingTile) => {
+    console.log(playingTile)
+    if(playingTile.length == 2) {
+        const playingObject = dane.find(obj => {
+            return obj.symbol === playingTile
+        })
+        console.log(JSON.stringify(playingObject))
+    } else {
+        const playingObject = dane.find(obj => {
+            return obj.name === playingTile
+        })
+        console.log(JSON.stringify(playingObject))
+    }
+    // c = [playingTile.c - 1, playingTile.c, playingTile.c + 1]
+    // r = [playingTile.r - 1, playingTile.r, playingTile.r + 1]
+    // console.log(c[0], c[1], c[2],r[0], r[1], r[2])
+} 
+const checker = (playingTile) => {
+    console.log("Test", correctCoords(playingTile))
     console.log("sprawdzilem")
 }
 
